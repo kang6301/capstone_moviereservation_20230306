@@ -1,4 +1,4 @@
-https://github.com/kang6301/capstone_moviereservation_20230306/issues/2#issue-1610693775
+![image](https://user-images.githubusercontent.com/48465481/223025551-99070f96-0ac5-4863-a409-34b5e0013394.png)
 
 # 예제 - Movie Reservation
 
