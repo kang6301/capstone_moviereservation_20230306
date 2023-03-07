@@ -17,12 +17,12 @@ import ReservationDetail from "./components/listers/ReservationDetail"
 import MessageManager from "./components/listers/MessageCards"
 import MessageDetail from "./components/listers/MessageDetail"
 
-
-import MovieviewView from "./components/MovieviewView"
-import MovieviewViewDetail from "./components/MovieviewViewDetail"
 import ReviewManager from "./components/listers/ReviewCards"
 import ReviewDetail from "./components/listers/ReviewDetail"
 
+
+import MoviewiewsView from "./components/MoviewiewsView"
+import MoviewiewsViewDetail from "./components/MoviewiewsViewDetail"
 
 export default new Router({
     // mode: 'history',
@@ -72,17 +72,6 @@ export default new Router({
                 component: MessageDetail
             },
 
-
-            {
-                path: '/movieviews',
-                name: 'MovieviewView',
-                component: MovieviewView
-            },
-            {
-                path: '/movieviews/:id',
-                name: 'MovieviewViewDetail',
-                component: MovieviewViewDetail
-            },
             {
                 path: '/reviews',
                 name: 'ReviewManager',
@@ -94,6 +83,17 @@ export default new Router({
                 component: ReviewDetail
             },
 
+
+            {
+                path: '/moviewiews',
+                name: 'MoviewiewsView',
+                component: MoviewiewsView
+            },
+            {
+                path: '/moviewiews/:id',
+                name: 'MoviewiewsViewDetail',
+                component: MoviewiewsViewDetail
+            },
 
 
     ]

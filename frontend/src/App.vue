@@ -19,7 +19,7 @@
                         >
                             <div style="line-height:100%;">≡</div>
                         </v-app-bar-nav-icon>
-                        capstonemoviereservation
+                        movie
                     </span>
                 </v-toolbar-title>
                 <span v-if="urlPath!=null" 
@@ -91,17 +91,6 @@
 
                     <v-list-item
                         class="px-2"
-                        key="movieviews"
-                        to="movieviews"
-                        @click="changeUrl()"
-                        color="deep-purple lighten-2"
-                        style="font-weight:700;"
-                    >
-                        Movieview
-                    </v-list-item>
-
-                    <v-list-item
-                        class="px-2"
                         key="reviews"
                         to="/reviews"
                         @click="changeUrl()"
@@ -112,6 +101,17 @@
                     </v-list-item>
 
 
+
+                    <v-list-item
+                        class="px-2"
+                        key="moviewiews"
+                        to="moviewiews"
+                        @click="changeUrl()"
+                        color="deep-purple lighten-2"
+                        style="font-weight:700;"
+                    >
+                        Moviewiews
+                    </v-list-item>
 
 
                 </v-list>
@@ -268,36 +268,6 @@
                             </v-card-actions>
                         </v-card>
 
-
-                        <v-card
-                            class="mx-auto"
-                            style="height:300px; width:300px; margin-bottom:20px;"
-                            outlined
-                        >
-                            <v-list-item>
-                                <v-list-item-avatar 
-                                    class="mx-auto"
-                                    size="80"
-                                    style="margin-top:80px;"
-                                ><span class="mdi mdi-apps" style="font-size:60px; color:#9575CD;"></span>
-                                </v-list-item-avatar>
-                            </v-list-item>
-
-                            <v-card-actions>
-                                <v-btn 
-                                    class="mx-auto"
-                                    outlined
-                                    rounded
-                                    key="movieviews"
-                                    to="/movieviews"
-                                    @click="changeUrl()"
-                                    color="deep-purple lighten-2"
-                                    style="font-weight:500; font-size:20px; padding:15px;"
-                                >
-                                    Movieview
-                                </v-btn>
-                            </v-card-actions>
-                        </v-card>
                         <v-card
                             class="mx-auto"
                             style="height:300px; width:300px; margin-bottom:20px;"
@@ -334,6 +304,36 @@
                             </v-card-actions>
                         </v-card>
 
+
+                        <v-card
+                            class="mx-auto"
+                            style="height:300px; width:300px; margin-bottom:20px;"
+                            outlined
+                        >
+                            <v-list-item>
+                                <v-list-item-avatar 
+                                    class="mx-auto"
+                                    size="80"
+                                    style="margin-top:80px;"
+                                ><span class="mdi mdi-apps" style="font-size:60px; color:#9575CD;"></span>
+                                </v-list-item-avatar>
+                            </v-list-item>
+
+                            <v-card-actions>
+                                <v-btn 
+                                    class="mx-auto"
+                                    outlined
+                                    rounded
+                                    key="moviewiews"
+                                    to="/moviewiews"
+                                    @click="changeUrl()"
+                                    color="deep-purple lighten-2"
+                                    style="font-weight:500; font-size:20px; padding:15px;"
+                                >
+                                    Moviewiews
+                                </v-btn>
+                            </v-card-actions>
+                        </v-card>
                 </v-row>
             </v-container>
         </v-main>

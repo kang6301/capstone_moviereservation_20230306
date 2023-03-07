@@ -24,14 +24,14 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path=/messages/**, 
-        - id: viewpage
+        - id: review
           uri: http://localhost:8085
           predicates:
-            - Path=, /movieviews/**
-        - id: review
+            - Path=/reviews/**, 
+        - id: viewpage
           uri: http://localhost:8086
           predicates:
-            - Path=/reviews/**, 
+            - Path=, /moviewiews/**
         - id: frontend
           uri: http://localhost:8080
           predicates:
@@ -71,14 +71,14 @@ spring:
           uri: http://message:8080
           predicates:
             - Path=/messages/**, 
-        - id: viewpage
-          uri: http://viewpage:8080
-          predicates:
-            - Path=, /movieviews/**
         - id: review
           uri: http://review:8080
           predicates:
             - Path=/reviews/**, 
+        - id: viewpage
+          uri: http://viewpage:8080
+          predicates:
+            - Path=, /moviewiews/**
         - id: frontend
           uri: http://frontend:8080
           predicates:

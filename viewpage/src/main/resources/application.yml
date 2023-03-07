@@ -28,10 +28,10 @@ spring:
       bindings:
         event-in:
           group: viewpage
-          destination: capstonemoviereservation
+          destination: movie
           contentType: application/json
         event-out:
-          destination: capstonemoviereservation
+          destination: movie
           contentType: application/json
 
 logging:
@@ -41,7 +41,7 @@ logging:
 
 
 server:
-  port: 8085
+  port: 8086
 
 ---
 
@@ -63,10 +63,10 @@ spring:
       bindings:
         event-in:
           group: viewpage
-          destination: capstonemoviereservation
+          destination: movie
           contentType: application/json
         event-out:
-          destination: capstonemoviereservation
+          destination: movie
           contentType: application/json
 
 

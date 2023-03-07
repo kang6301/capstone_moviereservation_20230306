@@ -163,22 +163,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: viewpage
+  name: review
   labels:
-    app: viewpage
+    app: review
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: viewpage
+      app: review
   template:
     metadata:
       labels:
-        app: viewpage
+        app: review
     spec:
       containers:
-        - name: viewpage
-          image: username/viewpage:latest
+        - name: review
+          image: username/review:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -203,22 +203,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: review
+  name: viewpage
   labels:
-    app: review
+    app: viewpage
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: review
+      app: viewpage
   template:
     metadata:
       labels:
-        app: review
+        app: viewpage
     spec:
       containers:
-        - name: review
-          image: username/review:latest
+        - name: viewpage
+          image: username/viewpage:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -313,23 +313,6 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: viewpage
-  labels:
-    app: viewpage
-spec:
-  ports:
-    - port: 8080
-      targetPort: 8080
-  selector:
-    app: viewpage
-
-
----
-
-
-apiVersion: v1
-kind: Service
-metadata:
   name: review
   labels:
     app: review
@@ -339,4 +322,21 @@ spec:
       targetPort: 8080
   selector:
     app: review
+
+
+---
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: viewpage
+  labels:
+    app: viewpage
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: viewpage
 
